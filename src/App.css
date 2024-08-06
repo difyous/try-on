@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* App.css */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.description {
+  animation: fadeIn 0.5s ease-in-out;
+}
+/* App.css */
+.app {
+  display: flex;
+  height: 100vh; /* Make sure the app takes the full viewport height */
+  overflow: hidden; /* Disable scrolling within the .app container */
+
+}
+
+.sidebar {
+  width: 300px; /* Increased width for larger rectangles */
+  padding: 10px;
+  background: linear-gradient(to bottom, #99ccff, #66b3ff);
+  border-right: 1px solid #ddd;
+  height: 100vh; /* Make the sidebar full height */
+/* color: #ffffff; /* Text color white */
+}
+
+.sidebar .logo {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.category-item {
+  margin-bottom: 20px;
+  padding: 10px; /* Added padding for internal spacing */
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.category-item h3 {
+  margin: 0;
+  
+
+
+}
+
+.product-list {
+  margin-top: 10px;
+}
+
+.product-item {
+  padding: 10px; /* Added padding for internal spacing */
+  margin-bottom: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.product-item:hover {
+  background-color: #eee;
+}
+
+.main-content {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.viewer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.viewer canvas {
+  width: 600px;
+  height: 400px;
+  background-color:  #ffffff;
+
+}
+
+.viewer .description {
+  margin-top: 20px;
+  text-align: center;
 }

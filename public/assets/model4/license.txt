@@ -1,0 +1,11 @@
+Model Information:
+* title:	WLAN-Modem
+* source:	https://sketchfab.com/3d-models/wlan-modem-9aad63b9ff894a3daa5bad8aeb79a9ae
+* author:	Mcx1m (https://sketchfab.com/maximmihajlovich)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "WLAN-Modem" (https://sketchfab.com/3d-models/wlan-modem-9aad63b9ff894a3daa5bad8aeb79a9ae) by Mcx1m (https://sketchfab.com/maximmihajlovich) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
