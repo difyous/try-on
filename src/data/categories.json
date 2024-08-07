@@ -1,0 +1,158 @@
+[
+    {
+      "id": 1,
+      "name": "LES MODEMS ADSL",
+      "products": [
+        { "id": 1, "name": " DLINK modemDSL-124","modelPath": "/assets/model1/scene.gltf","description":"  clavier algerie telecom grand format pour les gammer " },
+        { "id": 2, "name": " DLINK DSL-2750U", "modelPath":  "/assets/model2/scene.gltf","description":"   " },
+        { "id": 3, "name": "MODEM ROUTER MERCUSYS 300MbpsWirelessNADSL2+", "modelPath": "/assets/model3/scene.gltf" ,"description":"   "},
+        { "id": 4, "name": " TENDA D305", "modelPath":  "/assets/model4/scene.gltf" ,"description":"   "},
+        
+        { "id": 5, "name": " TENDAD301","modelPath": "/assets/model1/scene.gltf","description":"  clavier algerie telecom grand format pour les gammer " }
+  
+      ]
+    },
+    {
+      "id": 2,
+      "name": "LES MODEMS ADSL/VDSL",
+      "products": [
+        { "id": 5, "name": " ModemD-LINKDSL-224", "modelPath":  "/assets/model5/scene.gltf","description":"   " },
+        { "id": 6, "name": "D-LINKDSL-X1852E", "modelPath":  "/assets/model6/scene.gltf","description":"   " },
+        { "id": 7, "name": "TENDAV300", "modelPath":  "/assets/model1/scene.gltf" ,"description":"   "}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "LES MODEMS 4G LTE",
+      "products": [
+        { "id": 8, "name": "DLINK DWR-M920", "modelPath":  "/assets/model5/scene.gltf","description":"   " },
+        { "id": 9, "name": " DLINK DWR-M920Data Only", "modelPath":  "/assets/model6/scene.gltf","description":"   " },
+        { "id": 10, "name": " DLINK DWR-910M", "modelPath":  "/assets/model1/scene.gltf" ,"description":"   "},
+        { "id": 11, "name": " Tenda 4G03 Pro ", "modelPath":  "/assets/model3/scene.gltf","description":"   " },
+       
+        { "id": 12, "name": " Tenda  4G06 ", "modelPath":  "/assets/model3/scene.gltf","description":"   " }
+  
+      ]
+    },
+    {
+      "id": 4,
+      "name": "LES MODEMS ROUTEURS",
+      "products": [
+        { "id": 5, "name": "Product 5", "modelPath":  "/assets/model5/scene.gltf","description":"   " },
+        { "id": 6, "name": "Product 6", "modelPath":  "/assets/model6/scene.gltf","description":"   " },
+        { "id": 7, "name": "Product 7", "modelPath":  "/assets/model1/scene.gltf" ,"description":"   "},
+        { "id": 8, "name": "Product 8", "modelPath":  "/assets/model3/scene.gltf","description":"   " }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "LES ROUTEURS",
+      "products": [
+        { "id": 5, "name": "BAGAGERIE RIVACASE", "modelPath":  "/assets/model5/scene.gltf","description":"   " },
+        { "id": 6, "name": "Product 6", "modelPath":  "/assets/model6/scene.gltf","description":"   " },
+        { "id": 7, "name": "Product 7", "modelPath":  "/assets/model1/scene.gltf" ,"description":"   "},
+        { "id": 8, "name": "Product 8", "modelPath":  "/assets/model3/scene.gltf","description":"   " }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "BAGAGERIE RIVACASE",
+      "products": [
+        { "id": 5, "name": "BAGAGERIE RIVACASE", "modelPath":  "/assets/model5/scene.gltf","description":"   " },
+        { "id": 6, "name": "Product 6", "modelPath":  "/assets/model6/scene.gltf","description":"   " },
+        { "id": 7, "name": "Product 7", "modelPath":  "/assets/model1/scene.gltf" ,"description":"   "},
+        { "id": 8, "name": "Product 8", "modelPath":  "/assets/model3/scene.gltf","description":"   " }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "LES ADAPTATEURS",
+      "products": [
+        { "id": 5, "name": "BAGAGERIE RIVACASE", "modelPath":  "/assets/model5/scene.gltf","description":"   " },
+        { "id": 6, "name": "Product 6", "modelPath":  "/assets/model6/scene.gltf","description":"   " },
+        { "id": 7, "name": "Product 7", "modelPath":  "/assets/model1/scene.gltf" ,"description":"   "},
+        { "id": 8, "name": "Product 8", "modelPath":  "/assets/model3/scene.gltf","description":"   " }
+      ]
+    }
+    ,
+    {
+      "id": 8,
+      "name": "LES TELEPHONES",
+      "products": [
+        { "id": 5, "name": "BAGAGERIE RIVACASE", "modelPath":  "/assets/model5/scene.gltf","description":"   " },
+        { "id": 6, "name": "LES ACCESSOIRES GAMING 6", "modelPath":  "/assets/model6/scene.gltf","description":"   " },
+        { "id": 7, "name": "Product 7", "modelPath":  "/assets/model1/scene.gltf" ,"description":"   "},
+        { "id": 8, "name": "Product 8", "modelPath":  "/assets/model3/scene.gltf","description":"   " }
+      ]
+    } ,
+    {
+      "id": 9,
+      "name": "LES ACCESSOIRES GAMING",
+      "products": [
+        { "id": 5, "name": "BAGAGERIE RIVACASE", "modelPath":  "/assets/model5/scene.gltf","description":"   " },
+        { "id": 6, "name": "LES ACCESSOIRES GAMING 6", "modelPath":  "/assets/model6/scene.gltf","description":"   " },
+        { "id": 7, "name": "Product 7", "modelPath":  "/assets/model1/scene.gltf" ,"description":"   "},
+        { "id": 8, "name": "Product 8", "modelPath":  "/assets/model3/scene.gltf","description":"   " }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "LES CLAVIERS",
+      "products": [
+        { "id": 5, "name": "CLAVIER ", "modelPath":  "/assets/model1/scene.gltf","description":"   " },
+        { "id": 6, "name": "LES ACCESSOIRES GAMING 6", "modelPath":  "/assets/model6/scene.gltf","description":"   " },
+        { "id": 7, "name": "Product 7", "modelPath":  "/assets/model1/scene.gltf" ,"description":"   "},
+        { "id": 8, "name": "Product 8", "modelPath":  "/assets/model3/scene.gltf","description":"   " }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "LES SOURIS",
+      "products": [
+        { "id": 5, "name": "BAGAGERIE RIVACASE", "modelPath":  "/assets/model5/scene.gltf","description":"   " },
+        { "id": 6, "name": "LES ACCESSOIRES GAMING 6", "modelPath":  "/assets/model6/scene.gltf","description":"   " },
+        { "id": 7, "name": "Product 7", "modelPath":  "/assets/model1/scene.gltf" ,"description":"   "},
+        { "id": 8, "name": "Product 8", "modelPath":  "/assets/model3/scene.gltf","description":"   " }
+      ]
+    },
+    {
+      "id":12,
+      "name": "LES TAPIS DE SOURIS",
+      "products": [
+        { "id": 5, "name": "BAGAGERIE RIVACASE", "modelPath":  "/assets/model5/scene.gltf","description":"   " },
+        { "id": 6, "name": "LES ACCESSOIRES GAMING 6", "modelPath":  "/assets/model6/scene.gltf","description":"   " },
+        { "id": 7, "name": "Product 7", "modelPath":  "/assets/model1/scene.gltf" ,"description":"   "},
+        { "id": 8, "name": "Product 8", "modelPath":  "/assets/model3/scene.gltf","description":"   " }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "LES CASQUES",
+      "products": [
+        { "id": 5, "name": "BAGAGERIE RIVACASE", "modelPath":  "/assets/model5/scene.gltf","description":"   " },
+        { "id": 6, "name": "LES ACCESSOIRES GAMING 6", "modelPath":  "/assets/model6/scene.gltf","description":"   " },
+        { "id": 7, "name": "Product 7", "modelPath":  "/assets/model1/scene.gltf" ,"description":"   "},
+        { "id": 8, "name": "Product 8", "modelPath":  "/assets/model3/scene.gltf","description":"   " }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "LES CLES USB",
+      "products": [
+        { "id": 5, "name": "BAGAGERIE RIVACASE", "modelPath":  "/assets/model5/scene.gltf","description":"   " },
+        { "id": 6, "name": "LES ACCESSOIRES GAMING 6", "modelPath":  "/assets/model6/scene.gltf","description":"   " },
+        { "id": 7, "name": "Product 7", "modelPath":  "/assets/model1/scene.gltf" ,"description":"   "},
+        { "id": 8, "name": "Product 8", "modelPath":  "/assets/model3/scene.gltf","description":"   " }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "LES BAFFLES, MICROPHONE ET LES SUPPORTS",
+      "products": [
+        { "id": 5, "name": "BAGAGERIE RIVACASE", "modelPath":  "/assets/model5/scene.gltf","description":"   " },
+        { "id": 6, "name": "LES ACCESSOIRES GAMING 6", "modelPath":  "/assets/model6/scene.gltf","description":"   " },
+        { "id": 7, "name": "Product 7", "modelPath":  "/assets/model1/scene.gltf" ,"description":"   "},
+        { "id": 8, "name": "Product 8", "modelPath":  "/assets/model3/scene.gltf","description":"   " }
+      ]
+    }
+  ]
