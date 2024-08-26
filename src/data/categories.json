@@ -6,7 +6,7 @@
         { "id": 1, "name": " DLINK modemDSL-124","modelPath": "/assets/model1/scene.gltf","description":"  clavier algerie telecom grand format pour les gammer " },
         { "id": 2, "name": " DLINK DSL-2750U", "modelPath":  "/assets/model2/scene.gltf","description":"   " },
         { "id": 3, "name": "MODEM ROUTER MERCUSYS 300MbpsWirelessNADSL2+", "modelPath": "/assets/model3/scene.gltf" ,"description":"   "},
-        { "id": 4, "name": " TENDA D305", "modelPath":  "/assets/model4/scene.gltf" ,"description":"   "},
+        { "id": 4, "name": " TENDA D305", "modelPath":  "/assets/model1/scene.gltf" ,"description":"   "},
         
         { "id": 5, "name": " TENDAD301","modelPath": "/assets/model1/scene.gltf","description":"  clavier algerie telecom grand format pour les gammer " }
   

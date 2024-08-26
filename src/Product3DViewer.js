@@ -1,8 +1,8 @@
-import React, { useRef } from 'react';
+import React, { useRef ,useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 
-const Model = ({ modelPath }) => {
+const Model = ({ modelPath, scale = [1, 1, 1] }) => {
   const { scene } = useGLTF(modelPath);
   const modelRef = useRef();
 
@@ -13,14 +13,40 @@ const Model = ({ modelPath }) => {
     }
   });
 
+  // Apply scale to the model
+  useEffect(() => {
+    if (modelRef.current) {
+      modelRef.current.scale.set(scale[0], scale[1], scale[2]);
+    }
+  }, [scale]);
+
+  // Cleanup resources when the model is unmounted
+  useEffect(() => {
+    return () => {
+      if (scene) {
+        scene.traverse((child) => {
+          if (child.geometry) child.geometry.dispose();
+          if (child.material) {
+            if (Array.isArray(child.material)) {
+              child.material.forEach((material) => material.dispose());
+            } else {
+              child.material.dispose();
+            }
+          }
+        });
+      }
+    };
+  }, [scene]);
+
   return <primitive ref={modelRef} object={scene} />;
 };
-
 const Product3DViewer = ({ product }) => {
   return (
-    <div style={{ height: '400px', width: '600px' }}>
-      <h2>{product.name} in 3D</h2>
-      <Canvas shadows>
+    <div className="bg-gray-800 text-white p-4 rounded-lg shadow-lg  h-[400px]" >
+            <h2 className="text-xl font-bold mb-2">{product.name} in 3D</h2>
+
+      <Canvas className="h-full w-full">
+        
         <ambientLight intensity={0.9} color={0xffffff} castShadow />
         <directionalLight
           intensity={2}
@@ -39,13 +65,16 @@ const Product3DViewer = ({ product }) => {
           castShadow
         />
         <pointLight position={[-10, 0, -10]} intensity={0.5} />
-        <Model modelPath={product.modelPath} />
+        {product && <Model modelPath={product.modelPath} scale={[2, 2,2
+
+        ]} />}
         <OrbitControls />
+      
       </Canvas>
-      <div style={{ marginTop: '20px', textAlign: 'center' }}>
-        <h3>Description</h3>
+      {/* <div className="mt-4 text-center">
+        <h3 className="text-lg font-semibold">Description</h3>
         <p>{product.description}</p>
-      </div>
+      </div> */}
     </div>
   );
 };

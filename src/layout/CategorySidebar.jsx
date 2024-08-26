@@ -4,17 +4,19 @@ const CategorySidebar = ({ categories, selectedCategory, onCategorySelect, onPro
   return (
     <div className="w-72 h-screen  font-bold">
       <div className="w-full p-4  content-center	 ">
-        <img src="/logoattt.svg" alt="Logo" className="w-full rounded-lg m-3" />
+      <div className='w-full overflow-y-auto '>    
+          <h2 className='text-center text-white text-2xl'> description</h2>
+        </div>
       </div>
       <div className='w-full  overflow-y-auto'>
         <div className='w-full overflow-y-auto '>    
-          <h2 className='text-center text-indigo-900 text-2xl'> Categories</h2>
+          <h2 className='text-center text-white text-2xl'>list of  Categorie</h2>
         </div>
         {categories.map((category) => (
           <div key={category.id} className="category-item">
-            <h4 className='text-purple-950 border-b-2 border-purple-950' onClick={() => onCategorySelect(category)}>{category.name}</h4>
+            <h4 className='text-white border-b-2 border-white' onClick={() => onCategorySelect(category)}>{category.name}</h4>
             {selectedCategory && selectedCategory.id === category.id && (
-              <div className="product-list text-violet-950 hover:ring-offset-purple-950 ">
+              <div className="product-list text-white hover:ring-offset-white ">
                 {category.products.map((product) => (
                   <div key={product.id} className="product-item" onClick={() => onProductSelect(product)}>
                     {product.name}
