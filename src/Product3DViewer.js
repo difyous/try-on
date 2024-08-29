@@ -1,6 +1,6 @@
-import React, { useRef, useEffect } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, useGLTF } from '@react-three/drei';
+import React, { useRef, useEffect } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { OrbitControls, useGLTF } from "@react-three/drei";
 
 // Composant pour le modèle du modem
 const Model = ({ modelPath, scale = [1, 1, 1], position = [0, 0, 0] }) => {
@@ -77,8 +77,8 @@ const Room = () => {
 // Composant principal pour afficher le modèle du modem dans la pièce
 const Product3DViewer = ({ product }) => {
   return (
-    <div className="bg-gradient-to-b from-violet-950 to-slate-950 text-white p-4 rounded-lg shadow-lg h-[380px]">
-      <h2 className="text-xl font-bold mb-2">{product.name} in 3D</h2>
+    <div className="bg-gradient-to-b from-violet-950 to-slate-950 text-white p-4 rounded-lg shadow-lg h-[500px]">
+      {/* <h2 className="text-xl font-bold mb-2">{product.name} in 3D</h2> */}
 
       <Canvas className="h-full w-full">
         <ambientLight intensity={0.9} color={0xffffff} castShadow />
@@ -99,7 +99,7 @@ const Product3DViewer = ({ product }) => {
           castShadow
         />
         <pointLight position={[-10, 0, -10]} intensity={0.5} />
-        
+
         {/* Afficher la pièce avec murs verts et sol gris collé */}
         <Room />
 

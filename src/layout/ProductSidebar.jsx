@@ -1,58 +1,49 @@
-import React from 'react';
-import DashedLine from '../components/atoms/DashedLine';
+import React from "react";
+import DashedLine from "../components/atoms/DashedLine";
 const ProductSidebar = ({ selectedCategory, onProductSelect }) => {
   return (
-     //div info +list product
-    <div className="w-72 h-screen font-bold bg-gradient-to-b from-violet-950 to-black">
+    //div info +list product
+    <div className="w-full h-screen px-14 py-10">
+      <div className="w-full">
+        <h1 className="text-white text-4xl font-bold">
+          {selectedCategory.name}
+        </h1>
+        <h4 className="mt-4 text-white text-lg font-medium">
+          <p>{"13 lessons - 10h 12m of tutorial"}</p>
+        </h4>
 
-     
-      <div className="w-full p-4 text-center">
-          
-          
-          <h6 className='text-white text-2xl'> { selectedCategory.name}</h6>
-          <div className="w-full p-4 text-center">
-             <h2 className='text-white text-2xl h-20'>description     </h2>
-             
-                <h className='text-white text-xs justify-around h-60'>
-                  
-                  LemodemDSL-124sansfilN300ADSL2+offre des  vitesses sans fil
-                  qui sont beaucoup plus rapides que 802.11g, vous permettant de
-                  maximiser les performances sans filet rester connecté où que vous
-                  soyez dans votre maison et le bureau     </h>
-
-          </div>
-           <div className="w-full  p-4 text-center">
-             <h2 className='text-white text-2xl'>liste de Produits</h2>
-          </div>
+        <p className="mt-4 text-white text-sm justify-around">
+          LemodemDSL-124sansfilN300ADSL2+offre des vitesses sans fil qui sont
+          beaucoup plus rapides que 802.11g, vous permettant de maximiser les
+          performances sans filet rester connecté où que vous soyez dans votre
+          maison et le bureau{" "}
+        </p>
       </div>
 
-
-
-      <div className='w-full  h-full overflow-y-auto p-4'>
+      <div className="mt-6">
         {selectedCategory ? (
-         selectedCategory.products.map((product) => (
-         <div
-          key={product.id}
-          className="product-item  text-white hover:bg-blue-700 p-6 rounded cursor-pointer     border-white"
-        onClick={() => onProductSelect(product)}
-        >
-       
-       <p>
+          selectedCategory.products.map((product, idx) => (
+            <div
+              key={product.id}
+              className="text-white"
+              onClick={() => onProductSelect(product)}
+            >
+              <div className="py-2 flex items-center space-x-4">
+                <p className="font-extrabold text-xl text-orange-400">
+                  0{idx + 1}
+                </p>
+                <p className="font-medium text-[14px]">{product.name}</p>
+              </div>
 
-        {product.name}
-       </p>
-      
-
-       <DashedLine css="h-px w-4 bg-gray-500" />
-      
-
+              <DashedLine css="h-px w-1 bg-gray-500" length={25} />
+            </div>
+          ))
+        ) : (
+          <p className="text-white text-center">
+            Veuillez sélectionner une catégorie
+          </p>
+        )}
       </div>
-      
-    ))
-  ) : (
-    <p className="text-white text-center">Veuillez sélectionner une catégorie</p>
-  )}
-</div>
     </div>
   );
 };
