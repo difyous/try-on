@@ -27,15 +27,10 @@ const HeroSection = () => {
   return (
     <header className="grid grid-cols-12">
       <div className="col-span-8 h-full w-full relative bg-[#1B1032]">
-        {selectedProduct ? (
-          <Product3DViewer product={selectedProduct} />
-        ) : (
-          <div className="flex items-center justify-center h-full text-white">
-            {selectedCategory
-              ? "Veuillez sélectionner un produit."
-              : "Veuillez sélectionner une catégorie."}
-          </div>
-        )}
+    
+  <Product3DViewer product={selectedProduct} category={selectedCategory.id} />
+{/* Do not render anything if there's no selectedProduct or selectedCategory */}
+
         <div className="absolute left-1/2 -translate-x-1/2 bottom-28">
           <ButtonSwitch
             handleNext={handleNextCategory}

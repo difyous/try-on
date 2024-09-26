@@ -17,10 +17,10 @@ const Navbar = () => {
         </div>
 
         <ul className="flex items-center space-x-14 text-lg font-medium">
-          <li>Lorem.</li>
-          <li>Lorem.</li>
-          <li>Lorem.</li>
-          <li>Lorem.</li>
+          <li>TELEPHONE</li>
+          <li>ADSL</li>
+          <li>ROUTEUR</li>
+          <li>FIBER</li>
         </ul>
       </div>
       <CustomButton

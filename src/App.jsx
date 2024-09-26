@@ -6,7 +6,8 @@ import Home from './pages/Home';
 
 const App = () => {
   return (
-    <div className="app">      
+    <div className="app"> 
+    <leva></leva>     
       <Home/>
     </div>
   );
